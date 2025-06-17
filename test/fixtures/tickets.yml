@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticket_code: 1
+  user_name: MyString
+  mail: MyString
+  desctiption: MyString
+
+two:
+  ticket_code: 1
+  user_name: MyString
+  mail: MyString
+  desctiption: MyString
