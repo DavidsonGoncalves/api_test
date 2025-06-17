@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  observation: MyString
+  rate: 1
+  ticket: one
+
+two:
+  observation: MyString
+  rate: 1
+  ticket: two
