@@ -1,0 +1,2 @@
+class TestDatabase < ApplicationRecord
+end
