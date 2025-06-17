@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   resources :tickets
   resources :test_databases
+
+  get '/ticket/index', to: 'tickets#index', as: :index_tickets
+  post '/ticket/create', to: 'tickets#create', as: :create_ticket
+  put '/ticket/update/:id', to: 'tickets#update', as: :update_ticket
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

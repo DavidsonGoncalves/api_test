@@ -48,6 +48,6 @@ class TicketsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def ticket_params
-      params.expect(ticket: [ :ticket_code, :user_name, :mail, :desctiption ])
+      params.expect(ticket: [ :ticket_code, :user_name, :mail, :description ])
     end
 end
