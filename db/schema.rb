@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_17_190431) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_17_224436) do
   create_table "tickets", force: :cascade do |t|
     t.integer "ticket_code"
     t.string "user_name"
     t.string "mail"
-    t.string "desctiption"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
