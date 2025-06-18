@@ -24,7 +24,10 @@ tmp/cache/*
 tmp/pids
 tmp/storage
 tmp
+tmp/
 *tmp
+config/environments/development.rb
+
 
 /config/database.yml
 
