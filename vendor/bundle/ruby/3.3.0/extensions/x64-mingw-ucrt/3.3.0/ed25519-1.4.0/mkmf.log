@@ -1,0 +1,179 @@
+append_cflags: checking for whether -Wall is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Ruby33-x64\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Vagrant\bin;C:\Program Files\komorebi\bin\;C:\Program Files\whkd\bin\;C:\Program Files\Yasb\;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe;C:\Users\Deivao\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Deivao\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -o conftest.exe -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Ruby33-x64\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Vagrant\bin;C:\Program Files\komorebi\bin\;C:\Program Files\whkd\bin\;C:\Program Files\Yasb\;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe;C:\Users\Deivao\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Deivao\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  -Wall -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -O3 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Ruby33-x64\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Vagrant\bin;C:\Program Files\komorebi\bin\;C:\Program Files\whkd\bin\;C:\Program Files\Yasb\;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe;C:\Users\Deivao\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Deivao\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -Wall  -O3 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -pedantic is accepted as CFLAGS... -------------------- no
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Ruby33-x64\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Vagrant\bin;C:\Program Files\komorebi\bin\;C:\Program Files\whkd\bin\;C:\Program Files\Yasb\;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe;C:\Users\Deivao\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Deivao\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -Wall -O3  -pedantic -Werror -c conftest.c"
+In file included from C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:34,
+                 from C:/Ruby33-x64/include/ruby-3.3.0/ruby/defines.h:71,
+                 from C:/Ruby33-x64/include/ruby-3.3.0/ruby/ruby.h:25,
+                 from C:/Ruby33-x64/include/ruby-3.3.0/ruby.h:38,
+                 from conftest.c:1:
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/nodiscard.h:35:34: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   35 | # define RBIMPL_ATTR_NODISCARD() [[nodiscard]]
+      |                                  ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:62:1: note: in expansion of macro 'RBIMPL_ATTR_NODISCARD'
+   62 | RBIMPL_ATTR_NODISCARD()
+      | ^~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/nodiscard.h:35:34: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   35 | # define RBIMPL_ATTR_NODISCARD() [[nodiscard]]
+      |                                  ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:90:1: note: in expansion of macro 'RBIMPL_ATTR_NODISCARD'
+   90 | RBIMPL_ATTR_NODISCARD()
+      | ^~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/nodiscard.h:35:34: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   35 | # define RBIMPL_ATTR_NODISCARD() [[nodiscard]]
+      |                                  ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:121:1: note: in expansion of macro 'RBIMPL_ATTR_NODISCARD'
+  121 | RBIMPL_ATTR_NODISCARD()
+      | ^~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/nodiscard.h:35:34: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   35 | # define RBIMPL_ATTR_NODISCARD() [[nodiscard]]
+      |                                  ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:151:1: note: in expansion of macro 'RBIMPL_ATTR_NODISCARD'
+  151 | RBIMPL_ATTR_NODISCARD()
+      | ^~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/nodiscard.h:35:34: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   35 | # define RBIMPL_ATTR_NODISCARD() [[nodiscard]]
+      |                                  ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/xmalloc.h:197:1: note: in expansion of macro 'RBIMPL_ATTR_NODISCARD'
+  197 | RBIMPL_ATTR_NODISCARD()
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Ruby33-x64/include/ruby-3.3.0/ruby/backward/2/attributes.h:38,
+                 from C:/Ruby33-x64/include/ruby-3.3.0/ruby/defines.h:73:
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:764:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  764 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:766:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  766 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:792:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  792 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:795:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  795 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:797:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  797 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:827:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  827 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/gc.h:829:5: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  829 |     RBIMPL_ATTR_MAYBE_UNUSED()
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/backward/2/attributes.h:159:28: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  159 | #define RB_UNUSED_VAR(x) x RBIMPL_ATTR_MAYBE_UNUSED()
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/scan_args.h:391:33: note: in expansion of macro 'RB_UNUSED_VAR'
+  391 |                  VALUE *vars[], RB_UNUSED_VAR(const char *fmt), RB_UNUSED_VAR(int varc))
+      |                                 ^~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/attr/maybe_unused.h:31:37: error: ISO C does not support '[[]]' attributes before C23 [-Werror=pedantic]
+   31 | # define RBIMPL_ATTR_MAYBE_UNUSED() [[maybe_unused]]
+      |                                     ^
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/backward/2/attributes.h:159:28: note: in expansion of macro 'RBIMPL_ATTR_MAYBE_UNUSED'
+  159 | #define RB_UNUSED_VAR(x) x RBIMPL_ATTR_MAYBE_UNUSED()
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Ruby33-x64/include/ruby-3.3.0/ruby/internal/scan_args.h:391:65: note: in expansion of macro 'RB_UNUSED_VAR'
+  391 |                  VALUE *vars[], RB_UNUSED_VAR(const char *fmt), RB_UNUSED_VAR(int varc))
+      |                                                                 ^~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Ruby33-x64\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Vagrant\bin;C:\Program Files\komorebi\bin\;C:\Program Files\whkd\bin\;C:\Program Files\Yasb\;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe;C:\Users\Deivao\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Deivao\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand" "gcc -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -Wall -O3  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+

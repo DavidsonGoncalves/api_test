@@ -1,0 +1,19 @@
+current directory: C:/Users/Deivao/OneDrive - Educacional/Documentos/Personal/Projects/Work/api_test/api_prot/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/Deivao/OneDrive - Educacional/Documentos/Personal/Projects/Work/api_test/api_prot/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250618-2216-uo3rgw sitelibdir\=./.gem.20250618-2216-uo3rgw clean
+
+current directory: C:/Users/Deivao/OneDrive - Educacional/Documentos/Personal/Projects/Work/api_test/api_prot/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250618-2216-uo3rgw sitelibdir\=./.gem.20250618-2216-uo3rgw
+generating cruby-x64-mingw-ucrt.def
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: C:/Users/Deivao/OneDrive - Educacional/Documentos/Personal/Projects/Work/api_test/api_prot/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250618-2216-uo3rgw sitelibdir\=./.gem.20250618-2216-uo3rgw install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20250618-2216-uo3rgw/skiptrace/internal
+
+current directory: C:/Users/Deivao/OneDrive - Educacional/Documentos/Personal/Projects/Work/api_test/api_prot/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250618-2216-uo3rgw sitelibdir\=./.gem.20250618-2216-uo3rgw clean
