@@ -19,6 +19,7 @@ class TicketsController < ApplicationController
 
     if @ticket.save
       render :show, status: :created, location: @ticket
+      SurveyMailer.survey_mail(@ticket).deliver_now
     else
       render json: @ticket.errors, status: :unprocessable_entity
     end
