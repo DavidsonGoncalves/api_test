@@ -18,9 +18,9 @@ class SurveysController < ApplicationController
     @survey = Survey.new(survey_params)
 
     if @survey.save
-      render :show, status: :created, location: @survey
+      @message= 'Survey was successfully sent.'
     else
-      render json: @survey.errors, status: :unprocessable_entity
+      @message= 'Survey error.'
     end
   end
 
@@ -40,6 +40,14 @@ class SurveysController < ApplicationController
     @survey.destroy!
   end
 
+  # GET /surveys/new
+  # GET /surveys/new.json
+  def new
+    @ticket = Ticket.find(params[:ticket_id])
+    @survey = Survey.new(ticket: @ticket)
+    render :new
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_survey
@@ -48,6 +56,6 @@ class SurveysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def survey_params
-      params.expect(survey: [ :observation, :rate, :ticket_id ])
+      params.require(:survey).permit(:observation, :rate, :ticket_id)
     end
 end

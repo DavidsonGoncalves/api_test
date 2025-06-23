@@ -1,3 +1,17 @@
+
+
 <h1> Pesquisa de satisfação</h1>
 
-<p>Olá <%=@ticket.user_name%></p>
+<h3>Olá <%=@ticket.user_name%> de acordo com o o ticket: <%=@ticket.ticket_code%> como você avalia o atendimento?</h3>
+
+
+<%(1..10).each do |n| %>
+  <%= link_to n, "/surveys/new?ticket_id=#{@ticket.id}&rate=#{n}" %>
+<% end %>
+
+
+
+
+
+
+

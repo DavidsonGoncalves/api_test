@@ -1,0 +1,23 @@
+<h3>Olá <%= @ticket.user_name %>,</h3>
+<p><%= params[:rate]%></p>
+<p>De acordo com o ticket <%= @ticket.ticket_code %>, como você avalia nosso atendimento?</p>
+
+<%= form_with model: @survey, url: create_survey_path, method: :post, local: true do |form| %>
+  <%= form.hidden_field :ticket_id %>
+
+  <div class="buttons">
+    <% (1..10).each do |n| %>
+      <%= form.radio_button :rate, n, checked: (params[:rate].to_i==n) %>
+      <%= form.label :rate, n %><br>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :observation, "Observação" %><br>
+    <%= form.text_area :observation, rows: 5, cols: 50 %>
+  </div>
+
+  <div>
+    <%= form.submit "Enviar" %>
+  </div>
+<% end %>
