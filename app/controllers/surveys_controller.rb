@@ -43,7 +43,7 @@ class SurveysController < ApplicationController
   # GET /surveys/new
   # GET /surveys/new.json
   def new
-    @ticket = Ticket.find(params[:ticket_id])
+    @ticket = Ticket.find_by(uuid: params[:uuid])
     @survey = Survey.new(ticket: @ticket)
     render :new
   end

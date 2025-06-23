@@ -1,5 +1,4 @@
 <h3>Olá <%= @ticket.user_name %>,</h3>
-<p><%= params[:rate]%></p>
 <p>De acordo com o ticket <%= @ticket.ticket_code %>, como você avalia nosso atendimento?</p>
 
 <%= form_with model: @survey, url: create_survey_path, method: :post, local: true do |form| %>

@@ -6,7 +6,7 @@
 
 
 <%(1..10).each do |n| %>
-  <%= link_to n, surveys_new_url(ticket_id: @ticket.id, rate: n)%>
+  <%= link_to n, surveys_new_url(uuid: @ticket.uuid, rate: n)%>
 <% end %>
 
 

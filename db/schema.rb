@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_17_231434) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_23_191312) do
   create_table "surveys", force: :cascade do |t|
     t.string "observation"
     t.integer "rate"
@@ -27,6 +27,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_17_231434) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "uuid"
   end
 
   add_foreign_key "surveys", "tickets"
