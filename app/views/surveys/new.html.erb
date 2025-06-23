@@ -1,22 +1,34 @@
-<h3>Olá <%= @ticket.user_name %>,</h3>
-<p>De acordo com o ticket <%= @ticket.ticket_code %>, como você avalia nosso atendimento?</p>
 
-<%= form_with model: @survey, url: create_survey_path, method: :post, local: true do |form| %>
-  <%= form.hidden_field :ticket_id %>
+<% if @survey_submitted %>
+<div class="alert alert-success" role="alert" style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
+      <p>Este chamado já foi avaliado! Obrigado por contrubuir para melhoria de nosso atendimento</p>
+    </div>
 
-  <div class="buttons">
-    <% (1..10).each do |n| %>
-      <%= form.radio_button :rate, n, checked: (params[:rate].to_i==n) %>
-      <%= form.label :rate, n %><br>
+<%else%>
+    <h3>Olá <%= @ticket.user_name %>,</h3>
+    <p>De acordo com o ticket <%= @ticket.ticket_code %>, como você avalia nosso atendimento?</p>
+
+    <%= form_with model: @survey, url: create_survey_path, method: :post, local: true do |form| %>
+        <%= form.hidden_field :ticket_id %>
+
+        <div class="buttons">
+            <% (1..10).each do |n| %>
+            <%= form.radio_button :rate, n, checked: (params[:rate].to_i==n) %>
+            <%= form.label :rate, n %><br>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :observation, "Observação" %><br>
+            <%= form.text_area :observation, rows: 5, cols: 50 %>
+        </div>
+
+        <div>
+            <%= form.submit "Enviar", disabled: @survey_submitted %>
+        </div>
     <% end %>
-  </div>
 
-  <div>
-    <%= form.label :observation, "Observação" %><br>
-    <%= form.text_area :observation, rows: 5, cols: 50 %>
-  </div>
+<%end%>
 
-  <div>
-    <%= form.submit "Enviar" %>
-  </div>
-<% end %>
+
+

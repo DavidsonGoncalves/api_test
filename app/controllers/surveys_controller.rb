@@ -44,8 +44,13 @@ class SurveysController < ApplicationController
   # GET /surveys/new.json
   def new
     @ticket = Ticket.find_by(uuid: params[:uuid])
-    @survey = Survey.new(ticket: @ticket)
-    render :new
+
+    if Survey.exists?(ticket_id: @ticket.id)
+      @survey_submitted = true
+    else
+      @survey = Survey.new(ticket: @ticket, rate: params[:rate])
+    end
+
   end
 
   private
