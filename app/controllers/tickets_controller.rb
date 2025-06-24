@@ -1,4 +1,6 @@
 class TicketsController < ApplicationController
+  before_action :authenticate_webhook, only: %i[create update destroy]
+
   before_action :set_ticket, only: %i[ show update destroy ]
 
   # GET /tickets
