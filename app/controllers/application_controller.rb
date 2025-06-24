@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::API
+  rescue_from StandardError, with: :internal_error
+
+  private
 
   def authenticate_webhook
    provided_token = request.headers['X-Webhook-Token']
@@ -7,6 +10,12 @@ class ApplicationController < ActionController::API
     render json: { error: 'Unauthorized' }, status: :unauthorized
     return
    end
+  end
+
+  def internal_error(exception)
+    logger.error exception.message
+    logger.error exception.backtrace.join("\n")
+    render json: { error: 'Internal Server Error' }, status: :internal_server_error
   end
 
 end
