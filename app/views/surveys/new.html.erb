@@ -229,6 +229,17 @@
       <div class="submit-button">
         <%= form.submit "Enviar", disabled: @survey_submitted %>
       </div>
+
+       <% if params[:success] == "true"%>
+        <div class="alert alert-success" role="alert">
+            <p>Obrigado por avaliar nosso atendimento!</p>
+       </div>
+        <% elsif params[:success] == "false" %>
+            <div class="alert alert-danger" role="alert">
+                <p>Ocorreu um erro ao enviar sua avaliação. Por favor, tente novamente mais tarde.</p>
+            </div>
+        <% end %>
+
     <% end %>
   <% end %>
 </div>

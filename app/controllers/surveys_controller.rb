@@ -18,9 +18,9 @@ class SurveysController < ApplicationController
     @survey = Survey.new(survey_params)
 
     if @survey.save
-      @message= 'Survey was successfully sent.'
+      redirect_to surveys_new_path(uuid: @survey.ticket.uuid, success: true)
     else
-      @message= 'Survey error.'
+      redirect_to surveys_new_path(uuid: @survey.ticket.uuid, success: false)
     end
   end
 
