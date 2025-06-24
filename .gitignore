@@ -33,6 +33,7 @@ tmp/
 
 
 /config/database.yml
+config/credentials.yml.enc
 
 # Ignore storage (uploaded files in development and any SQLite databases).
 /storage/*
