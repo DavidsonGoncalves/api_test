@@ -9,6 +9,8 @@
 
 # Ignore all environment files.
 /.env*
+.env
+*.env
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -26,7 +28,8 @@ tmp/storage
 tmp
 tmp/
 *tmp
-config/environments/development.rb
+
+
 
 
 /config/database.yml
