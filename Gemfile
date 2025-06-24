@@ -5,10 +5,7 @@ gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 2.1"
 
-#use mysql2 as the database for Active Record
-gem "mysql2", "0.5.6"
 gem "tty-spinner"
 
 gem "nokogiri", ">= 1.18.8.rc"
@@ -60,12 +57,21 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem "dotenv-rails"
+  gem "sqlite3", ">= 2.1"
+
+#use mysql2 as the database for Active Record
+gem "mysql2", "0.5.6"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "dotenv-rails"
+
+  gem "sqlite3", ">= 2.1"
+
+#use mysql2 as the database for Active Record
+  gem "mysql2", "0.5.6"
 end
 
 group :test do
