@@ -4,18 +4,19 @@ class ApplicationController < ActionController::API
   private
 
   def authenticate_webhook
-   provided_token = request.headers['X-Webhook-Token']
 
-   unless ActiveSupport::SecurityUtils.secure_compare(provided_token.to_s,  ENV['WEBHOOK_TOKEN'].to_s)
-    render json: { error: 'Unauthorized' }, status: :unauthorized
-    return
-   end
+    timestamp = request.headers['X-Zendesk-Webhook-Signature-Timestamp']
+    signature = request.headers['X-Zendesk-Webhook-Signature']
+    body = request.raw_post
+    secret = ENV['ZENDESK_WEBHOOK_SECRET']
+
+    message = "#{timestamp}#{body}"
+    digest = OpenSSL::HMAC.digest('sha256', secret, message)
+    signature_local = Base64.strict_encode64(digest)
+
+    unless ActiveSupport::SecurityUtils.secure_compare(signature_local, signature)
+      render json: { error: 'Unauthorized' }, status: :unauthorized and return
+    end
   end
-
-  def internal_error(exception)
-    logger.error exception.message
-    logger.error exception.backtrace.join("\n")
-    render json: { error: 'Internal Server Error' }, status: :internal_server_error
-  end
-
+  
 end
