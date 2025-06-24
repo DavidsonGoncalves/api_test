@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_23_224657) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_24_195321) do
   create_table "surveys", force: :cascade do |t|
     t.string "observation"
     t.integer "rate"
@@ -21,7 +21,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_23_224657) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.integer "ticket_code"
+    t.string "ticket_code"
     t.string "user_name"
     t.string "mail"
     t.string "description"
